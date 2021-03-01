@@ -1,0 +1,73 @@
+.Square {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    transition: all ease 1s;
+}
+
+.red {
+    background-color: red;
+}
+
+.cyan {
+    background-color: cyan; 
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.slider_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square_container {
+    width: 600px;
+    height: 100px;
+    margin: 0 10px;
+    background-color: rosybrown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+    .square_container .left {
+        position : absolute;
+        left: 0px;
+        transition: all ease 0.5s;
+    }
+    .square_container .right {
+        position : absolute;
+        right: 0px;
+    }
+    .square_container .center {
+        position : absolute;
+    }
+    .offSet_250px{
+        transform: translateX(250px);
+    }
+    .offSet_minus250px{
+        transform: translateX(-250px);
+    }
+
+    .btnArrow {
+        height: 100%;
+        line-height: 100%;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+        .btnArrow:hover {
+            text-shadow: 1px 1px 4px darkblue;
+        }
